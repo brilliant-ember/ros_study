@@ -23,7 +23,9 @@ int main(int argc, char** argv){
   while (node.ok()){
     tf::StampedTransform transform;
     try{
-      listener.lookupTransform("/turtle2", "/turtle1",
+        // change turtle2 transform to be same as carrot1 transform, and copy 
+        // that result to the tranform reference passed (tf::StampedTransform transform) passed
+      listener.lookupTransform("/turtle2", "/carrot1",
                                ros::Time(0), transform);
     }
     catch (tf::TransformException &ex) {

@@ -14,6 +14,8 @@ int main(int argc, char** argv){
         /*
    create a new transform, from the parent turtle1 to the new child carrot1.
    The carrot1 frame is 2 meters offset to the left from the turtle1 frame.
+   I am saying basically that I want the frame between them two to be the 
+   transform set below, ie carrot follows turtle1 within that distance between them
         */
         transform.setOrigin(tf::Vector3(0.0, 2.0, 0.0));
         transform.setRotation(tf::Quaternion(0,0,0,1));
