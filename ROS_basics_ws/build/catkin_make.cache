@@ -1,0 +1,2 @@
+learning_tf
+-DCATKIN_DEVEL_PREFIX=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/install -G Unix Makefiles
