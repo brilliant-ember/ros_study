@@ -1,0 +1,8 @@
+prefix=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel
+
+Name: server_client
+Description: Description of server_client
+Version: 0.0.0
+Cflags: -I/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel/include
+Libs: -L${prefix}/lib -lserver_client
+Requires: message_generation roscpp std_msgs

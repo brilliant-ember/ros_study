@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("publisher_subscriber")
+subdirs("server_client")
 subdirs("learning_tf")

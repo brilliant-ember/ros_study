@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/R
 # The main recursive "all" target.
 all: gtest/all
 all: publisher_subscriber/all
+all: server_client/all
 all: learning_tf/all
 
 .PHONY : all
@@ -62,6 +63,7 @@ all: learning_tf/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: publisher_subscriber/preinstall
+preinstall: server_client/preinstall
 preinstall: learning_tf/preinstall
 
 .PHONY : preinstall
@@ -74,6 +76,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: publisher_subscriber/clean
+clean: server_client/clean
 clean: learning_tf/clean
 
 .PHONY : clean
@@ -247,6 +250,39 @@ publisher_subscriber/clean: publisher_subscriber/CMakeFiles/publisher_subscriber
 .PHONY : publisher_subscriber/clean
 
 #=============================================================================
+# Directory level rules for directory server_client
+
+# Recursive "all" directory target.
+server_client/all: server_client/CMakeFiles/client.dir/all
+server_client/all: server_client/CMakeFiles/server_client_generate_messages.dir/all
+server_client/all: server_client/CMakeFiles/server.dir/all
+
+.PHONY : server_client/all
+
+# Recursive "preinstall" directory target.
+server_client/preinstall:
+
+.PHONY : server_client/preinstall
+
+# Recursive "clean" directory target.
+server_client/clean: server_client/CMakeFiles/client.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages.dir/clean
+server_client/clean: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_gencpp.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_geneus.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages_eus.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_genlisp.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_gennodejs.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_generate_messages_py.dir/clean
+server_client/clean: server_client/CMakeFiles/server_client_genpy.dir/clean
+server_client/clean: server_client/CMakeFiles/server.dir/clean
+
+.PHONY : server_client/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
 
 # All Build rule for target.
@@ -389,7 +425,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -416,7 +452,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -443,7 +479,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -470,7 +506,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -517,7 +553,7 @@ publisher_subscriber/CMakeFiles/topic_subscriber.dir/all: publisher_subscriber/C
 publisher_subscriber/CMakeFiles/topic_subscriber.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/topic_subscriber.dir/build.make publisher_subscriber/CMakeFiles/topic_subscriber.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/topic_subscriber.dir/build.make publisher_subscriber/CMakeFiles/topic_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=20,21 "Built target topic_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=31,32 "Built target topic_subscriber"
 .PHONY : publisher_subscriber/CMakeFiles/topic_subscriber.dir/all
 
 # Build rule for subdir invocation for target.
@@ -788,7 +824,7 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/a
 publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/all: publisher_subscriber/CMakeFiles/_publisher_subscriber_generate_messages_check_deps_MsgTutorial.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=12,13 "Built target publisher_subscriber_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=14,15 "Built target publisher_subscriber_generate_messages_eus"
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1036,7 +1072,7 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/a
 publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=11 "Built target publisher_subscriber_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=13 "Built target publisher_subscriber_generate_messages_cpp"
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1118,7 +1154,7 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/
 publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/all: publisher_subscriber/CMakeFiles/_publisher_subscriber_generate_messages_check_deps_MsgTutorial.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=14 "Built target publisher_subscriber_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=16 "Built target publisher_subscriber_generate_messages_lisp"
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1146,7 +1182,7 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.di
 publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/all: publisher_subscriber/CMakeFiles/_publisher_subscriber_generate_messages_check_deps_MsgTutorial.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=15 "Built target publisher_subscriber_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=17 "Built target publisher_subscriber_generate_messages_nodejs"
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1193,7 +1229,7 @@ publisher_subscriber/CMakeFiles/topic_publisher.dir/all: publisher_subscriber/CM
 publisher_subscriber/CMakeFiles/topic_publisher.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/topic_publisher.dir/build.make publisher_subscriber/CMakeFiles/topic_publisher.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/topic_publisher.dir/build.make publisher_subscriber/CMakeFiles/topic_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=18,19 "Built target topic_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=29,30 "Built target topic_publisher"
 .PHONY : publisher_subscriber/CMakeFiles/topic_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1275,7 +1311,7 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/al
 publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/all: publisher_subscriber/CMakeFiles/_publisher_subscriber_generate_messages_check_deps_MsgTutorial.dir/all
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/depend
 	$(MAKE) -f publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/build.make publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=16,17 "Built target publisher_subscriber_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=18,19 "Built target publisher_subscriber_generate_messages_py"
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1350,13 +1386,440 @@ publisher_subscriber/CMakeFiles/publisher_subscriber_genpy.dir/clean:
 .PHONY : publisher_subscriber/CMakeFiles/publisher_subscriber_genpy.dir/clean
 
 #=============================================================================
+# Target rules for target server_client/CMakeFiles/client.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/_catkin_empty_exported_target.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_py.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_eus.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_py.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+server_client/CMakeFiles/client.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+server_client/CMakeFiles/client.dir/all: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+server_client/CMakeFiles/client.dir/all: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+server_client/CMakeFiles/client.dir/all: server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+server_client/CMakeFiles/client.dir/all: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/client.dir/all: server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+	$(MAKE) -f server_client/CMakeFiles/client.dir/build.make server_client/CMakeFiles/client.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/client.dir/build.make server_client/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=1,2 "Built target client"
+.PHONY : server_client/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: server_client/CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+server_client/CMakeFiles/client.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/client.dir/build.make server_client/CMakeFiles/client.dir/clean
+.PHONY : server_client/CMakeFiles/client.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages.dir/all: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server_client_generate_messages.dir/all: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server_client_generate_messages.dir/all: server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+server_client/CMakeFiles/server_client_generate_messages.dir/all: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server_client_generate_messages.dir/all: server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages.dir/build.make server_client/CMakeFiles/server_client_generate_messages.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages.dir/build.make server_client/CMakeFiles/server_client_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_generate_messages"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages: server_client/CMakeFiles/server_client_generate_messages.dir/rule
+
+.PHONY : server_client_generate_messages
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages.dir/build.make server_client/CMakeFiles/server_client_generate_messages.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all:
+	$(MAKE) -f server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/build.make server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/build.make server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target _server_client_generate_messages_check_deps_SrvTutorial"
+.PHONY : server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/rule
+
+# Convenience name for target.
+_server_client_generate_messages_check_deps_SrvTutorial: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/rule
+
+.PHONY : _server_client_generate_messages_check_deps_SrvTutorial
+
+# clean rule for target.
+server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/build.make server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/clean
+.PHONY : server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages_cpp.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_cpp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_cpp.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_cpp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=22 "Built target server_client_generate_messages_cpp"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages_cpp: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/rule
+
+.PHONY : server_client_generate_messages_cpp
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages_cpp.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_cpp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_cpp.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_gencpp.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_gencpp.dir/all: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_gencpp.dir/build.make server_client/CMakeFiles/server_client_gencpp.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_gencpp.dir/build.make server_client/CMakeFiles/server_client_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_gencpp"
+.PHONY : server_client/CMakeFiles/server_client_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_gencpp.dir/rule
+
+# Convenience name for target.
+server_client_gencpp: server_client/CMakeFiles/server_client_gencpp.dir/rule
+
+.PHONY : server_client_gencpp
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_gencpp.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_gencpp.dir/build.make server_client/CMakeFiles/server_client_gencpp.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_geneus.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_geneus.dir/all: server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_geneus.dir/build.make server_client/CMakeFiles/server_client_geneus.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_geneus.dir/build.make server_client/CMakeFiles/server_client_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_geneus"
+.PHONY : server_client/CMakeFiles/server_client_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_geneus.dir/rule
+
+# Convenience name for target.
+server_client_geneus: server_client/CMakeFiles/server_client_geneus.dir/rule
+
+.PHONY : server_client_geneus
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_geneus.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_geneus.dir/build.make server_client/CMakeFiles/server_client_geneus.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages_lisp.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_lisp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_lisp.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_lisp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=25 "Built target server_client_generate_messages_lisp"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages_lisp: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/rule
+
+.PHONY : server_client_generate_messages_lisp
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages_lisp.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_lisp.dir/build.make server_client/CMakeFiles/server_client_generate_messages_lisp.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages_eus.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages_eus.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+server_client/CMakeFiles/server_client_generate_messages_eus.dir/all: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_eus.dir/build.make server_client/CMakeFiles/server_client_generate_messages_eus.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_eus.dir/build.make server_client/CMakeFiles/server_client_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=23,24 "Built target server_client_generate_messages_eus"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages_eus: server_client/CMakeFiles/server_client_generate_messages_eus.dir/rule
+
+.PHONY : server_client_generate_messages_eus
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages_eus.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_eus.dir/build.make server_client/CMakeFiles/server_client_generate_messages_eus.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_genlisp.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_genlisp.dir/all: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_genlisp.dir/build.make server_client/CMakeFiles/server_client_genlisp.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_genlisp.dir/build.make server_client/CMakeFiles/server_client_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_genlisp"
+.PHONY : server_client/CMakeFiles/server_client_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_genlisp.dir/rule
+
+# Convenience name for target.
+server_client_genlisp: server_client/CMakeFiles/server_client_genlisp.dir/rule
+
+.PHONY : server_client_genlisp
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_genlisp.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_genlisp.dir/build.make server_client/CMakeFiles/server_client_genlisp.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages_nodejs.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/build.make server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/build.make server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=26 "Built target server_client_generate_messages_nodejs"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages_nodejs: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/rule
+
+.PHONY : server_client_generate_messages_nodejs
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/build.make server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_gennodejs.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_gennodejs.dir/all: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_gennodejs.dir/build.make server_client/CMakeFiles/server_client_gennodejs.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_gennodejs.dir/build.make server_client/CMakeFiles/server_client_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_gennodejs"
+.PHONY : server_client/CMakeFiles/server_client_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_gennodejs.dir/rule
+
+# Convenience name for target.
+server_client_gennodejs: server_client/CMakeFiles/server_client_gennodejs.dir/rule
+
+.PHONY : server_client_gennodejs
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_gennodejs.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_gennodejs.dir/build.make server_client/CMakeFiles/server_client_gennodejs.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_generate_messages_py.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_generate_messages_py.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_py.dir/all
+server_client/CMakeFiles/server_client_generate_messages_py.dir/all: server_client/CMakeFiles/_server_client_generate_messages_check_deps_SrvTutorial.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_py.dir/build.make server_client/CMakeFiles/server_client_generate_messages_py.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_py.dir/build.make server_client/CMakeFiles/server_client_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=27,28 "Built target server_client_generate_messages_py"
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_py.dir/rule
+
+# Convenience name for target.
+server_client_generate_messages_py: server_client/CMakeFiles/server_client_generate_messages_py.dir/rule
+
+.PHONY : server_client_generate_messages_py
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_generate_messages_py.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_generate_messages_py.dir/build.make server_client/CMakeFiles/server_client_generate_messages_py.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server_client_genpy.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server_client_genpy.dir/all: server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server_client_genpy.dir/build.make server_client/CMakeFiles/server_client_genpy.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server_client_genpy.dir/build.make server_client/CMakeFiles/server_client_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num= "Built target server_client_genpy"
+.PHONY : server_client/CMakeFiles/server_client_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server_client_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server_client_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server_client_genpy.dir/rule
+
+# Convenience name for target.
+server_client_genpy: server_client/CMakeFiles/server_client_genpy.dir/rule
+
+.PHONY : server_client_genpy
+
+# clean rule for target.
+server_client/CMakeFiles/server_client_genpy.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server_client_genpy.dir/build.make server_client/CMakeFiles/server_client_genpy.dir/clean
+.PHONY : server_client/CMakeFiles/server_client_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target server_client/CMakeFiles/server.dir
+
+# All Build rule for target.
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/_catkin_empty_exported_target.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_py.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_eus.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_py.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server.dir/all: publisher_subscriber/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server.dir/all: server_client/CMakeFiles/server_client_generate_messages_cpp.dir/all
+server_client/CMakeFiles/server.dir/all: server_client/CMakeFiles/server_client_generate_messages_lisp.dir/all
+server_client/CMakeFiles/server.dir/all: server_client/CMakeFiles/server_client_generate_messages_eus.dir/all
+server_client/CMakeFiles/server.dir/all: server_client/CMakeFiles/server_client_generate_messages_nodejs.dir/all
+server_client/CMakeFiles/server.dir/all: server_client/CMakeFiles/server_client_generate_messages_py.dir/all
+	$(MAKE) -f server_client/CMakeFiles/server.dir/build.make server_client/CMakeFiles/server.dir/depend
+	$(MAKE) -f server_client/CMakeFiles/server.dir/build.make server_client/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=20,21 "Built target server"
+.PHONY : server_client/CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+server_client/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 server_client/CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles 0
+.PHONY : server_client/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: server_client/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+server_client/CMakeFiles/server.dir/clean:
+	$(MAKE) -f server_client/CMakeFiles/server.dir/build.make server_client/CMakeFiles/server.dir/clean
+.PHONY : server_client/CMakeFiles/server.dir/clean
+
+#=============================================================================
 # Target rules for target learning_tf/CMakeFiles/frame_tf_broadcaster.dir
 
 # All Build rule for target.
 learning_tf/CMakeFiles/frame_tf_broadcaster.dir/all:
 	$(MAKE) -f learning_tf/CMakeFiles/frame_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/frame_tf_broadcaster.dir/depend
 	$(MAKE) -f learning_tf/CMakeFiles/frame_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/frame_tf_broadcaster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=1,2 "Built target frame_tf_broadcaster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=3,4 "Built target frame_tf_broadcaster"
 .PHONY : learning_tf/CMakeFiles/frame_tf_broadcaster.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1383,7 +1846,7 @@ learning_tf/CMakeFiles/frame_tf_broadcaster.dir/clean:
 learning_tf/CMakeFiles/turtle_tf_listener.dir/all:
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_listener.dir/build.make learning_tf/CMakeFiles/turtle_tf_listener.dir/depend
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_listener.dir/build.make learning_tf/CMakeFiles/turtle_tf_listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=24,25 "Built target turtle_tf_listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=35,36 "Built target turtle_tf_listener"
 .PHONY : learning_tf/CMakeFiles/turtle_tf_listener.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2004,7 +2467,7 @@ learning_tf/CMakeFiles/tf_generate_messages_py.dir/clean:
 learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/all:
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/depend
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=22,23 "Built target turtle_tf_broadcaster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/CMakeFiles --progress-num=33,34 "Built target turtle_tf_broadcaster"
 .PHONY : learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/all
 
 # Build rule for subdir invocation for target.
