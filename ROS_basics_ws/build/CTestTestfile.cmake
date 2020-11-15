@@ -5,6 +5,10 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("joint_state_publisher/joint_state_publisher_gui")
 subdirs("publisher_subscriber")
+subdirs("joint_state_publisher/joint_state_publisher")
 subdirs("server_client")
 subdirs("learning_tf")
+subdirs("testbot_description")
+subdirs("urdf_tutorial")

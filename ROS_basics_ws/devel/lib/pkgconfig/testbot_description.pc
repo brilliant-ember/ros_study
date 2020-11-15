@@ -1,0 +1,8 @@
+prefix=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel
+
+Name: testbot_description
+Description: Description of testbot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

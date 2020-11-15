@@ -368,6 +368,9 @@ UBUNTU:BOOL=TRUE
 UBUNTU_FOCAL:BOOL=TRUE
 
 //Path to a file.
+_file_name:FILEPATH=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/joint_state_publisher/joint_state_publisher/test/test_64_joint_robot.launch
+
+//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
 
 //Path to a file.
@@ -387,6 +390,9 @@ actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
@@ -459,13 +465,25 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
+joint_state_publisher_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/joint_state_publisher/joint_state_publisher
+
+//Value Computed by CMake
+joint_state_publisher_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/joint_state_publisher/joint_state_publisher
+
+//Value Computed by CMake
+joint_state_publisher_gui_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/joint_state_publisher/joint_state_publisher_gui
+
+//Value Computed by CMake
+joint_state_publisher_gui_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/joint_state_publisher/joint_state_publisher_gui
+
+//Value Computed by CMake
 learning_tf_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/learning_tf
 
 //Value Computed by CMake
 learning_tf_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/learning_tf
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libtf2.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -476,6 +494,9 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
 //Value Computed by CMake
 publisher_subscriber_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/publisher_subscriber
 
@@ -484,6 +505,9 @@ publisher_subscriber_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutoria
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/noetic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/noetic/share/roscpp/cmake
@@ -500,8 +524,20 @@ rosgraph_DIR:PATH=/opt/ros/noetic/share/rosgraph/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/noetic/share/roslaunch/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/noetic/share/rostest/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
@@ -521,6 +557,12 @@ std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 //The directory containing a CMake configuration file for std_srvs.
 std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
 
+//Value Computed by CMake
+testbot_description_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/testbot_description
+
+//Value Computed by CMake
+testbot_description_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/testbot_description
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
 
@@ -538,6 +580,15 @@ tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
 
 //The directory containing a CMake configuration file for turtlesim.
 turtlesim_DIR:PATH=/opt/ros/noetic/share/turtlesim/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
+//Value Computed by CMake
+urdf_tutorial_BINARY_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/urdf_tutorial
+
+//Value Computed by CMake
+urdf_tutorial_SOURCE_DIR:STATIC=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/urdf_tutorial
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -690,7 +741,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

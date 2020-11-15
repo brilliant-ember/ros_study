@@ -1,0 +1,8 @@
+prefix=/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel
+
+Name: urdf_tutorial
+Description: Description of urdf_tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

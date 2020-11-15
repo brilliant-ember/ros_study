@@ -131,9 +131,13 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/gtest/cmake_install.cmake")
+  include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/joint_state_publisher/joint_state_publisher_gui/cmake_install.cmake")
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/publisher_subscriber/cmake_install.cmake")
+  include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/joint_state_publisher/joint_state_publisher/cmake_install.cmake")
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/server_client/cmake_install.cmake")
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/learning_tf/cmake_install.cmake")
+  include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/testbot_description/cmake_install.cmake")
+  include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/urdf_tutorial/cmake_install.cmake")
 
 endif()
 
