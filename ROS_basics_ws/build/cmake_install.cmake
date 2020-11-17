@@ -138,6 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/learning_tf/cmake_install.cmake")
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/testbot_description/cmake_install.cmake")
   include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/urdf_tutorial/cmake_install.cmake")
+  include("/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/build/rrbot_replica/cmake_install.cmake")
 
 endif()
 

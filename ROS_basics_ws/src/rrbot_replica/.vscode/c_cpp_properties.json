@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/learning_tf/include/**",
+        "/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/publisher_subscriber/include/**",
+        "/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/rrbot_replica/include/**",
+        "/home/mo/Documents/Other/FollowingTutorials/Ros/Ros_website/ROS_basics_ws/src/server_client/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
