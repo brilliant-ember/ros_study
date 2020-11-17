@@ -10,5 +10,10 @@ Working RVIZ with the command
 ```
   roslaunch rrbot_replica rrbot_rviz.launch
 ```
-
 ![](screenshots/2020-11-17-16-07-48.png)
+
+Launch Gazebo with this command 
+
+```
+roslaunch rrbot_replica rrbot_world.launch
+```
