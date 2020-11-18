@@ -18,4 +18,10 @@
 </node>
 
 
+<!-- use my python script to control the arms of the robot -->
+
+<node name="myJointControlNode" pkg="rrbot_replica" 
+type="joints_control_publisher.py" output="screen" respawn="true"/>
+
+
 </launch>
