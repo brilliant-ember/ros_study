@@ -28,6 +28,14 @@
     <material>Gazebo/Orange</material>
   </gazebo>
 
+
+    <!-- myLink -->
+  <gazebo reference="link4">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
    <!-- camera_link -->
   <gazebo reference="camera_link">
     <mu1>0.2</mu1>
